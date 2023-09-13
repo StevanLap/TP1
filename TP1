@@ -1,1 +1,10 @@
-test
+#Code pour TP1: word count
+#Definir la fonction count_word
+def count_word(input_string):
+    word_count = len(input_string.split())
+    return word_count
+#Demander a l'utilisateur d'ecrire une phrase
+phrase = input("Choisissez une phrase et je vais trouver le nombre de mot dans cette phrase:")
+word_count = count_word(phrase)
+#Pour que le code affiche la reponse
+print(f"Nombre de mots:{word_count}")
